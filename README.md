@@ -53,42 +53,58 @@ In the software aspect of the objective, the initial focus is on achieving three
 - Dataset collection is a key step in the custom model training, so it took time to gather 10,000+ dataset (images), with various augmentations, preprocessing parameters.
 - Annotations for the gathered dataset, along with the labelling of required classes is done.
 - Dataset collection, Annotating, and training of the custom model to generate the required .pt files is done with Roboflow software.
+- Trained the Dataset with batch size of 16 and with 50 epochs.
+- Confusion Matrix for Dangerous Behaviour Detection
+  
+  ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/fd6a1952-c8df-456f-81b7-b14f478cb789)
+  
+- Confusion Matrix for Driver's Eye Closure Detection
 
+  ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/8a1523a4-07bb-4b93-944f-bbccb9435375)
 
+- Confusion Matrix for Facial Expression Analysis
 
+  ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/f35a937d-cf68-42ea-99f1-18d3987e3c7a)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Output for Driver's Eye Closure Detection
+  - Drowsiness/Fatigueness is recognized from the Eye Status (Open, Closed, Half Open) in front of the camera. Here, only the two classes are displayed (Focused and Sleepy).
+  - Based on the real-time drowsiness detection, when the driver feels drowsy, the system detects and takes safety measures such as an indication to the driver.
+ 
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/e06b6a13-bbc4-4ef5-9622-aba50326628d)
     
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/173ffa15-29c4-4db1-b242-e31c79b18339)
 
+- Output for Dangerous Behaviour Detection
+  - Distraction is recognized from the custom objects I have used such as Mobile Phone and Bottle in front of the camera. Here, only the two classes are displayed (Mobile and Drinking).
+ 
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/ae9374b0-91ab-4756-93e5-e8d72bafec6f)
 
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/488d6e5a-01ac-4207-91e2-cc0c17337696)
 
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/582d9231-68d8-4801-bed0-2df9014332a6)
 
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/dc39200f-1d4e-4b80-b5d6-cb3e712dc483)
 
+- Output for Facial Expression Analysis
+  - Facial emotion is recognized from my expressions in front of the camera. Here, only the two emotions are displayed (Nervous and Neutral).
+  - Based on this real-time emotion detection, when the driver is nervous for a prolonged period of time, this indicates danger situation such as vehicle interruption by intruders (Anti-theft recognition).
 
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/d6ccfdb2-73fb-49e5-bd50-47651c28a043)
+
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/449547a3-b1c5-4e20-bf21-c7c552747497)
+
+- Output for Driver's Head Pose Estimation
+  - Head Pose estimation is indirectly connected to the Driver Distraction Scenario. When the Driver’s head position is wavery without looking straight, the system indicates a warning to the driver.
+
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/9d37a807-9792-4764-ae0f-90e3cc033ca6)
+
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/05f45b13-cc2f-46cc-a141-646e6b07bd2c)
+
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/cfc5cfa3-8bc0-4c69-89f5-143559dc3f4a)
+
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/ee32a0f6-abb6-4a3d-a3da-24e4c5f11e78)
+
+    ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/1787bfb4-5ebb-45f8-b0a8-ada8b505b2f6)
+    
+## Results for Software part of Smart Driver Monitoring System
+When the Driver fully loses control of himself, by overriding the CAN signal, partial automation is possible
