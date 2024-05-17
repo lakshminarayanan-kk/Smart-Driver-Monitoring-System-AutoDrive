@@ -47,6 +47,8 @@ In the software aspect of the objective, the initial focus is on achieving three
 
 ![image](https://github.com/lakshminarayanan-kk/Smart-Driver-Monitoring-System-AutoDrive/assets/170000853/c1c58fcd-d011-42c7-a606-0d9546013e9f)
 
+* Till "Analyzing the Behavior of CAN" step is done till now and steps after those are kept as Future Works
+
 ## Results for Software part of Smart Driver Monitoring System
 - Dataset collection is a key step in the custom model training, so it took time to gather 10,000+ dataset (images), with various augmentations, preprocessing parameters.
 - Annotations for the gathered dataset, along with the labelling of required classes is done.
